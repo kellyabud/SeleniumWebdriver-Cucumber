@@ -1,7 +1,18 @@
+<div align="center">
+<img src="https://github.com/kellyabud/SeleniumWebdriver-Cucumber/assets/135430840/d72c2375-1308-4a0a-880d-ce4cc9f6bd8d
+
+" width="700px" />
+</div>
+
+
 $ npm init -y
-$ npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber
+
+npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber
+
 $ npm install selenium-webdriver assert
+
 $ npm install chromedriver geckodriver
+
 # Criar a pasta features > incluir arquivo BDD
 # Criar features/step-definitions > incluir arquivo JS
 # Criar .gitignore
