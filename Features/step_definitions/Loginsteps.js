@@ -52,7 +52,7 @@ Given('que fulano esteja na tela de login', { timeout: 30 * 1000 }, async () => 
 When('o usuario informar email e senha válidos', { timeout: 30 * 1000 }, async () => {
     await driver.findElement(By.xpath("//input[@id=\'login_field\']")).sendKeys("kelly.abud@gmail.com")
     await driver.findElement(By.id("password"), 2000).click()
-    await driver.findElement(By.id("password"), 2000).sendKeys("Yk120627")
+    await driver.findElement(By.id("password"), 2000).sendKeys("senha")
 
 
 });
