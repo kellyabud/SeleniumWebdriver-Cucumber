@@ -1,8 +1,5 @@
 <div align="center">
-<img src="https://github.com/kellyabud/SeleniumWebdriver-Cucumber/assets/135430840/d72c2375-1308-4a0a-880d-ce4cc9f6bd8d
-
-" width="700px" />
-</div>
+<img src="https://github.com/kellyabud/SeleniumWebdriver-Cucumber/assets/135430840/d72c2375-1308-4a0a-880d-ce4cc9f6bd8d" width="700px" /></div>
 
 
 $ npm init -y
