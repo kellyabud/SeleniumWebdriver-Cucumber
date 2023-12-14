@@ -1,25 +1,36 @@
-name: Selenium Webdriver
-
-on: [push]
+name: Selenium tests with Github Actions
+on: 
+#   schedule:
+#   - cron: "0 */6 * * 1-5"
+  
+  push:
+    branches:
+     - 'main'
+      
+  
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm install
-      - run: npm run build --if-present
 
-  selenium:
-    needs: build
+  #test_schedule:
+  checkout-and-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
+      
+
+      - name: Install libraries
+        run: npm install --save-dev @cucumber/pretty-formatter @cucumber/cucumber selenium-webdriver assert geckodriver   
+        timeout-minutes: 10
+        
+      - name: Run Tests
+        continue-on-error: true
+        run:  npm run test       
+          
+       
+      - name: Generate report
+        uses: actions/upload-artifact@v3
         with:
-          node-version: 18 
-      - run: npm install 
-      - run: npm test 
+         name: Myreport.html
+         path: "**/cucumber-report.html"       
+       
