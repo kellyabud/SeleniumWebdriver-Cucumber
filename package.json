@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js -f @cucumber/pretty-formatter features/* --format html:cucumber-report.html"
+    "test": "npx cucumber-js -f @cucumber/pretty-formatter Features/* --format html:cucumber-report.html"
   },
   "keywords": [],
   "author": "",
