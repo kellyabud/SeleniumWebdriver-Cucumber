@@ -40,4 +40,4 @@ const firefox = require('geckodriver');
 const { By, Builder } = require('selenium-webdriver');
 let driver = new Builder()
     .forBrowser('firefox')
-    .build();
+    .build().
